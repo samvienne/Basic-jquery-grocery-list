@@ -1,0 +1,49 @@
+
+body {
+	width:50%;
+	margin: 0 auto;
+}
+
+h1, h2, h3 {
+	text-align: center;
+} 
+
+#new_product div {
+	display: flex;
+	justify-content: center;
+}
+
+#clear_list,
+#valid_product {
+	display: block;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+#valid_product {
+	margin-bottom: 40px;
+}
+
+#clear_list {
+	margin-bottom: 20px;
+}
+
+#list_item {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#list_item article {
+	width: 50%;
+}
+
+#list_item article ul li{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+#grocery,
+#new_product {
+	border: 1px solid grey;
+	margin: 10px 0;
+}
