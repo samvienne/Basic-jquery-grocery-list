@@ -4,19 +4,45 @@
 	<meta charset="UTF-8">
 	<script src="https://kit.fontawesome.com/1d6f1259b8.js" crossorigin="anonymous"></script>
 	<title>Liste de courses JS</title>
+	<script  src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<div id="new_product">
-		<h2>Ajouter un produit</h2>
-		<input id="product" type="text" name="add_product" value="">
-		<button type="button" id="valid_product">Add button</button>
-	</div>
-	<div>
-		<h2>Liste de courses</h2>
-		<div id="list_item">
+		<h1>Add a product</h1>
+		<div>
+			<input id="product" type="text" name="add_product" value="">
+			<select name="product_category" id="product_category">
+				<option value="fridge">fridge</option>
+				<option value="condiments">condiments</option>
+				<option value="vegetables">fruits and vegetables</option>
+				<option value="other">Other</option>
+			</select>
 		</div>
+		<button type="button" id="valid_product">Add item</button>
 	</div>
-	<button type="button" id="clear_list">Clear list</button>
+	<div id="grocery">
+		<h2>Grocery list</h2>
+		<div id="list_item">
+			<article>
+				<h3>Fridge</h3>
+				<ul id="fridge_list"></ul>
+			</article>
+			<article>
+				<h3>Condiments</h3>
+				<ul id="cond_list"></ul>
+			</article>
+			<article>
+				<h3>Fruits and vegetables</h3>
+				<ul id="veg_list"></ul>
+			</article>
+			<article>
+				<h3>Other</h3>
+				<ul id="other_list"></ul>
+			</article>
+		</div>
+		<button type="button" id="clear_list">Clear list</button>
+	</div>
 	<script src="index.js"></script>
 </body>
 </html>
